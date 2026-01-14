@@ -1,24 +1,7 @@
 const LeftCard = () => {
   return (
-    <div className="
-      w-full md:w-1/2
-      h-[60vh] md:h-full
-      bg-[url('/intro.jpg')]
-      bg-cover bg-center
-      flex items-end md:items-center
-      justify-center
-      p-4
-    ">
-      <p className="
-        max-w-md
-        bg-black/60
-        backdrop-blur-md
-        text-white
-        text-sm md:text-lg
-        p-4 md:p-6
-        rounded-2xl
-        border border-gray-400
-      ">
+    <div className='w-180 h-full bg-[url("/intro.jpg")] bg-cover bg-center flex items-center justify-center'>
+      <p className=" h-100 w-80 p-4 text-xl text-black font-italic m-10 flex-row rounded-2xl border-3 border-gray-500">
         Hello! I'm a front-end developer who enjoys creating visually appealing
         and functional web projects. This Poster Gallery is a small React-based
         project where I display posters from categories like Marvel, DC, and
@@ -30,3 +13,7 @@ const LeftCard = () => {
 };
 
 export default LeftCard;
+
+
+
+

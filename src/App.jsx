@@ -9,22 +9,27 @@ import DC from './Components/DC';
 import Footer from './Footer';
 import Error from './Components/Error';
 
+
 const App = () => {
   return (
-    <div className="bg-black text-white min-h-screen w-full">
-      <Navbar />
+    
+        <div className='bg-black text-white h-full w-full'>
+          <Navbar />
+          <Routes>
+          <Route path='/Home' element={<Home />} />
+          <Route path='/anime' element={<Anime />} />
+          <Route path='/marvel' element={<Marvel />} />
+          <Route path='/dc' element={<DC />} />
+          
+          <Route path="*" element={<Error />} />
+          </Routes>
+          <footer><Footer /></footer>
+        </div>
+  
+  )
+}
 
-      <Routes>
-        <Route path="/Home" element={<Home />} />
-        <Route path="/anime" element={<Anime />} />
-        <Route path="/marvel" element={<Marvel />} />
-        <Route path="/dc" element={<DC />} />
-        <Route path="*" element={<Error />} />
-      </Routes>
+export default App
 
-      <Footer />
-    </div>
-  );
-};
 
-export default App;
+
